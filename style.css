@@ -1,0 +1,115 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+/* BOX SIZING */
+* {
+    box-sizing: border-box;
+}
+
+/* GENERAL STYLING */
+body {
+    font-family: 'Lato', Arial, sans-serif;
+    background-color: #FFF8F5;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* HEADING STYLING */
+h1, h2, h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* HEADER */
+header {
+    background-color: #D9A7A0;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* MAIN CONTENT */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+}
+
+/* PROFILE SECTION - FLEXBOX */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid #E5D5D0;
+    border-radius: 12px;
+}
+
+.profile img {
+    width: 220px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.bio {
+    flex: 1;
+}
+
+/* OTHER SECTIONS */
+section {
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #E5D5D0;
+    border-radius: 12px;
+}
+
+h2 {
+    color: #99565B;
+    font-size: 1.7rem;
+}
+
+h3 {
+    color: #99565B;
+    font-size: 1.3rem;
+}
+
+/* FOOTER */
+footer {
+    background-color: #D9A7A0;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
+
+
